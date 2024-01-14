@@ -5,6 +5,7 @@
 //  Created by yoshi on 2024/01/14.
 //
 
+import App
 import SwiftUI
 
 @main

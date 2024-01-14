@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		92655BDE2B53AE85008700B0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92655BDD2B53AE85008700B0 /* App.swift */; };
-		92655BE02B53AE85008700B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92655BDF2B53AE85008700B0 /* ContentView.swift */; };
 		92655BE22B53AE86008700B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92655BE12B53AE86008700B0 /* Assets.xcassets */; };
 		92655BE52B53AE86008700B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92655BE42B53AE86008700B0 /* Preview Assets.xcassets */; };
+		92E8FCEC2B53B3090018FC04 /* App in Frameworks */ = {isa = PBXBuildFile; productRef = 92E8FCEB2B53B3090018FC04 /* App */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92655BDA2B53AE85008700B0 /* sample-architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92655BDD2B53AE85008700B0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		92655BDF2B53AE85008700B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92655BE12B53AE86008700B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92655BE42B53AE86008700B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E8FCEC2B53B3090018FC04 /* App in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +44,10 @@
 		92655BD12B53AE85008700B0 = {
 			isa = PBXGroup;
 			children = (
-				92655BDC2B53AE85008700B0 /* sample-architecture */,
+				92655BDD2B53AE85008700B0 /* App.swift */,
+				92160C7E2B53AEC500E9E422 /* Resources */,
 				92655BDB2B53AE85008700B0 /* Products */,
+				92E8FCEA2B53B3090018FC04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,22 +59,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		92655BDC2B53AE85008700B0 /* sample-architecture */ = {
-			isa = PBXGroup;
-			children = (
-				92655BDD2B53AE85008700B0 /* App.swift */,
-				92655BDF2B53AE85008700B0 /* ContentView.swift */,
-				92160C7E2B53AEC500E9E422 /* Resources */,
-			);
-			path = "sample-architecture";
-			sourceTree = "<group>";
-		};
 		92655BE32B53AE86008700B0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
 				92655BE42B53AE86008700B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92E8FCEA2B53B3090018FC04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +90,9 @@
 			dependencies = (
 			);
 			name = "sample-architecture";
+			packageProductDependencies = (
+				92E8FCEB2B53B3090018FC04 /* App */,
+			);
 			productName = "sample-architecture";
 			productReference = 92655BDA2B53AE85008700B0 /* sample-architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -145,7 +147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92655BE02B53AE85008700B0 /* ContentView.swift in Sources */,
 				92655BDE2B53AE85008700B0 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"sample-architecture/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = DTNU4X38FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -308,7 +309,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"sample-architecture/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = DTNU4X38FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -352,6 +353,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92E8FCEB2B53B3090018FC04 /* App */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = App;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92655BD22B53AE85008700B0 /* Project object */;
 }
